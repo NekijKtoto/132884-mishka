@@ -9,7 +9,9 @@
     <!--шапка сайта-->
     <header class="page-header">
       <div class="page-header__wrapper"><!--центровщик-->
-        <img class="page-header__header-logo" src="http://placehold.it/150x100" alt="Мишка - магазин изделий ручной работы">
+        <a href="index.html">
+          <img class="page-header__header-logo" src="http://placehold.it/150x100" alt="Мишка - магазин изделий ручной работы">
+        </a>
         <nav class="page-header__main-nav">
           <span class="page-header__menu"></span>
         </nav>
@@ -23,72 +25,75 @@
     <!--Каталог товаров-->
     <!--Блок продукта-->
     <article class="product">
-      <a class="product__photo-link" href="#">
-        <img src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
-      </a>
       <div class="product__wrapper">
-        <div class="product__description">
-          <h2 class="product__title">
-            <a href="#">Зайчик попрыгайчик</a>
-          </h2>
-          <span class="product__options">Рост 30 см, вес 200 г</span>
+        <a class="product__photo-link" href="#">
+          <img src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
+        </a>
+        <div class="product__wrapper">
+          <div class="product__description">
+            <h2 class="product__title">
+              <a href="#">Зайчик попрыгайчик</a>
+            </h2>
+            <span class="product__options">Рост 30 см, вес 200 г</span>
+          </div>
+          <div class="product__user-block">
+            <span class="product__price">1 200 руб.</span>
+            <a class="product__order" href="#">Добавить в корзину</a>
+          </div>
         </div>
-        <div class="product__user-block">
-          <span class="product__price">1 200 руб.</span>
-          <a class="product__order" href="#">Добавить в корзину</a>
+      </article>
+      <article class="product">
+        <a class="product__photo-link" href="#">Корзинка для белья
+          <img src="http://placehold.it/150x100" alt="Корзинка для белья">
+        </a>
+        <div class="product__wrapper">
+          <div class="product__description">
+            <h2 class="product__title">
+              <a href="#">Корзинка для белья</a>
+            </h2>
+            <span class="product__options">Диаметр 15 см, высота 10 см</span>
+          </div>
+          <div class="product__user-block">
+            <span class="product__price">690 руб.</span>
+            <a class="product__order" href="#">Добавить в корзину</a>
+          </div>
         </div>
-      </div>
-    </article>
-    <article class="product">
-      <a class="product__photo-link" href="#">Корзинка для белья
-        <img src="http://placehold.it/150x100" alt="Корзинка для белья">
-      </a>
-      <div class="product__wrapper">
-        <div class="product__description">
-          <h2 class="product__title">
-            <a href="#">Корзинка для белья</a>
-          </h2>
-          <span class="product__options">Диаметр 15 см, высота 10 см</span>
+      </article>
+      <article class="product">
+        <a class="product__photo-link" href="#">Большая корзинка для игрушек
+          <img src="http://placehold.it/150x100" alt="Корзинка для игрушек">
+        </a>
+        <div class="product__wrapper">
+          <div class="product__description">
+            <h2 class="product__title">
+              <a href="#">Большая корзинка для игрушек</a>
+            </h2>
+            <span class="product__options">Диаметр 30 см, высота 30 см</span>
+          </div>
+          <div class="product__user-block">
+            <span class="product__price">1 500 руб.</span>
+            <a class="product__order" href="#">Добавить в корзину</a>
+          </div>
         </div>
-        <div class="product__user-block">
-          <span class="product__price">690 руб.</span>
-          <a class="product__order" href="#">Добавить в корзину</a>
+      </article>
+      <!--Блок продукта-->
+      <!--Блок заказа-->
+      <article class="production">
+        <div class="production__wrapper">
+          <div class="production__title">
+            <h2>Процесс производства</h2>
+          </div>
+          <div class="production__video">
+            <a class="production__play-btn" href="#">Воспроизвести</a>
+            <img src="http://placehold.it/150x100" alt="Видео процесса производства">
+          </div>
+          <div class="production__description">
+            <p>
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
+            <a class="production__order-btn" href="#">Сделать заказ</a>
+          </div>
         </div>
-      </div>
-    </article>
-    <article class="product">
-      <a class="product__photo-link" href="#">Большая корзинка для игрушек
-        <img src="http://placehold.it/150x100" alt="Корзинка для игрушек">
-      </a>
-      <div class="product__wrapper">
-        <div class="product__description">
-          <h2 class="product__title">
-            <a href="#">Большая корзинка для игрушек</a>
-          </h2>
-          <span class="product__options">Диаметр 30 см, высота 30 см</span>
-        </div>
-        <div class="product__user-block">
-          <span class="product__price">1 500 руб.</span>
-          <a class="product__order" href="#">Добавить в корзину</a>
-        </div>
-      </div>
-    </article>
-    <!--Блок продукта-->
-    <!--Блок заказа-->
-    <article class="production">
-      <div class="production__title">
-        <h2>Процесс производства</h2>
-      </div>
-      <div class="production__video">
-        <a class="production__play-btn" href="#">Воспроизвести</a>
-        <img src="http://placehold.it/150x100" alt="Видео процесса производства">
-      </div>
-      <div class="production__description">
-        <p>
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-        </p>
-        <a class="production__order-btn" href="#">Сделать заказ</a>
-      </div>
     </article>
     <!--Блок заказа-->
     <!--Подвал-->
