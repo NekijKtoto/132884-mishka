@@ -9,9 +9,15 @@
     <!--шапка сайта-->
     <header class="page-header">
       <div class="page-header__wrapper"><!--центровщик-->
-        <img class="page-header__header-logo" src="http://placehold.it/150x100" alt="Мишка - магазин изделий ручной работы">
-        <nav class="page-header__main-nav">
-          <span class="page-header__menu"></span>
+        <div class="page-header__header-logo">
+          <img src="http://placehold.it/150x100" alt="Мишка - магазин изделий ручной работы">
+        </div>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__btn" type="button" name="button">Открыть меню</button>
+          <a class="main-nav__item main-nav__item--catalog" href="catalog.html">Каталог товаров</a>
+          <a class="main-nav__item main-nav__item--order" href="form.html">Вязание на заказ</a>
+          <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a>
+          <a class="main-nav__item main-nav__item--cart" href="#">Корзина: пока пуста</a>
         </nav>
       </div>
     </header>
@@ -22,29 +28,24 @@
         <h1 class="promo-header__descr">Милые штуки ручной
         работы для дома</h1>
       </div>
-      <img class="promo-header__image" src="http://placehold.it/150x100" alt="Изделия из пряжи">
     </section>
     <!--промо блок-->
-    <!--предметы интерьера-->
-    <section class="Interior-items">
-      <div class="Interior-items__wrapper"><!--центровщик-->
-        <a href="#">
-          <span>Предметы интерьера</span>
-          <img src="http://placehold.it/150x100" alt="Лампа">
-        </a>
-      </div>
+    <!--предметы интерьера детские игрушки-->
+    <section class="interior-items">
+      <ul class="interior-items__type-list">
+        <li class"interior-items__type--interior-goods">
+          <a href="#">
+            <span>Предметы интерьера</span>
+          </a>
+        </li>
+        <li class="interior-items__type--kids toys">
+          <a href="#">
+            <span>Детские игрушки</span>
+          </a>
+        </li>
+      </ul>
     </section>
-    <!--предметы интериера-->
-    <!--детские игрушки-->
-    <section class="kids-toys">
-      <div class="kids-toys__wrapper"><!--центровщик-->
-        <a href="#">
-          <span>Детские игрушки</span>
-          <img src="http://placehold.it/150x100" alt="Кубик">
-        </a>
-      </div>
-    </section>
-    <!--детские игрушки-->
+    <!--предметы интерьера детские игрушки-->
     <!--Блок продукта-->
     <article class="product">
       <div class="product__wrapper"><!--центровщик-->
@@ -95,16 +96,16 @@
             <p class="reviews__text">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </p>
-            <cite class="reviews__author-name">Анастасия Красильникова</cite>
+            <span class="reviews__author-name">Анастасия Красильникова</span>
             <span class="reviews__insta-name">@misssssiskras</span>
           </blockquote>
         </div>
         <div class="reviews__nav-btns">
-          <a class="reviews__nav-btn  reviews__nav-btn--prev" href="#">Назад
-            <img src="http://placehold.it/150x100" alt="Назад">
+          <a class="reviews__nav-btn  reviews__nav-btn--prev" href="#">
+            Предидущий отзыв
           </a>
           <a class="reviews__nav-btn  reviews__nav-btn--next" href="#">Вперед
-            <img src="http://placehold.it/150x100" alt="Вперед">
+            Следующий отзыв
           </a>
         </div>
         <a class="reviews__write-btn" href="#">Написать</a>
@@ -116,17 +117,13 @@
       <div class="contacts__content-wrapper"><!--центровщик-->
         <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__main-info">
-          <div class="contacts__e-mail">
-            <p class="contacts__item  contacts__item--name">e-mail:</p>
-            <p class="contacts__item  contacts__item--value">
-              <a class="contacts__e-mail-link" href="#">
-                <span class="contacts__item--underline">info@mimimishkashop.ru</span>
-              </a>
-            </p>
+          <div class="contacts-e-mail">
+            <span class="contacts-e-mail__contacts-item--mail">e-mail:</span>
+            <a class="contacts-e-mail__contacts-item--link" href="#">info@mimimishkashop.ru</a>
           </div>
-          <div class="contacts__address">
-            <p class="contacts__item  contacts__item--name">адрес:</p>
-            <p class="contacts__item  contacts__item--value">г. Санкт-Петербург,<br>
+          <div class="contacts-address">
+            <span class="contacts-address__contacts-item--name">адрес:</span>
+            <p class="contacts-address__contacts-item--value">г. Санкт-Петербург,<br>
             ул. Большая Конюшенная, д. 19/8, офис 101
             </p>
           </div>
@@ -141,6 +138,11 @@
     <!--Подвал-->
     <footer class="page-footer">
       <div class="page-footer__wrapper"><!--центровщик-->
+        <div class="page-footer__social-links">
+          <a class="page-footer__social-link  page-footer__social-link--insta" href="#"></a>
+          <a class="page-footer__social-link  page-footer__social-link--fb" href="#"></a>
+          <a class="page-footer__social-link  page-footer__social-link--vk" href="#"></a>
+        </div>
         <div class="page-footer__developer">
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
             <span>Разарботано</span>
