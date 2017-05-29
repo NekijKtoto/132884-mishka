@@ -8,11 +8,17 @@
     <!--шапка сайта-->
     <header class="page-header">
       <div class="page-header__wrapper"><!--центровщик-->
-        <a href="index.html">
-          <img class="page-header__header-logo" src="http://placehold.it/150x100" alt="Мишка - магазин изделий ручной работы">
-        </a>
-        <nav class="page-header__main-nav">
-          <span class="page-header__menu"></span>
+        <div class="page-header__header-logo">
+          <a href="index.html">
+            <img src="http://placehold.it/150x100" alt="Мишка - магазин изделий ручной работы">
+          </a>
+        </div>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__btn" type="button" name="button">Открыть меню</button>
+          <a class="main-nav__item main-nav__item--catalog" href="catalog.html">Каталог товаров</a>
+          <a class="main-nav__item main-nav__item--order" href="form.html">Вязание на заказ</a>
+          <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a>
+          <a class="main-nav__item main-nav__item--cart" href="#">Корзина: пока пуста</a>
         </nav>
       </div>
     </header>
