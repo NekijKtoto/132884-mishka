@@ -23,102 +23,90 @@
     </div>
     <!--Каталог товаров-->
     <!--Блок формы-->
-    <div class="wrapper-form">
+    <div class="wrapper-form"><!--Центровщик-->
       <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="order-form__description">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
-        <div class="order-form__item-wrapper">
-          <div class="order-form__item  order-form__item--type">
-            <div class="order-form__item-name  order-form__item-name--type">
-              <span>Тип</span>
-            </div>
-            <div class="order-form__options  order-form__options--type">
-              <label for="type-home">Аксессуар для интерьера</label>
-              <label for="type-toy">Детская игрушка</label>
-            </div>
-          </div>
+        <!--Поля формы-->
+        <div class="order-form__item-name  order-form__item-name--type">
+          <span>Тип</span>
         </div>
-        <div class="order-form__item-wrapper  order-form__item-wrapper--background">
-          <div class="order-form__item  order-form__item--color">
-            <div class="order-form__item-name  order-form__item-name--color">
-              <span>Цвет</span>
-            </div>
-            <div class="order-form__options  order-form__options--color">
-              <label for="white"></label>
-              <label for="grey"></label>
-              <label for="tiffany"></label>
-              <label for="black"></label>
-              <label for="pink"></label>
-              <label for="orange"></label>
-            </div>
-          </div>
+        <div class="order-form__options  order-form__options--type">
+          <input type="radio" name="type" value="Home accessories" checked="">
+          <label for="type-home">Аксессуар для интерьера</label>
+          <input type="radio" name="type" value="Toys">
+          <label for="type-toy">Детская игрушка</label>
         </div>
-        <div class="order-form__item-wrapper">
-          <div class="order-form__item  order-form__item--full-name">
-            <div class="order-form__item-name  order-form__item-name--full-name">
-              <span>Фио</span>
-            </div>
-            <div class="order-form__options  order-form__options--full-name">
-              <div class="order-form__full-name-option-wrapper">
-                <label class="order-form__surname-label" for="surname">Фамилия</label>
-                <input id="surname" name="surname" placeholder="Укажите фамилию" required="" type="text">
-              </div>
-              <div class="order-form__full-name-option-wrapper">
-                <label class="order-form__name-label" for="name">Имя:</label>
-                <input id="name" name="name" placeholder="Введите ваше имя" required="" type="text">
-              </div>
-              <div class="order-form__full-name-option-wrapper">
-                <label class="order-form__fathers-name-label" for="fathers-name">Отчество:</label>
-                <input id="fathers-name" name="fathers-name" placeholder="Отчество, если желаете" type="text">
-              </div>
-            </div>
-          </div>
+        <div class="order-form__item-name  order-form__item-name--color">
+          <span>Цвет</span>
         </div>
-        <div class="order-form__item-wrapper  order-form__item-wrapper--background">
-          <div class="order-form__item  order-form__item--phone-num">
-            <div class="order-form__item-name  order-form__item-name--phone-num">
-              <span>Тел</span>
-            </div>
-            <div class="order-form__options  order-form__options--phone-num">
-              <div class="order-form__option-wrapper">
-                <input name="phone-number" placeholder="+7 XXX XX XX" required="" type="tel">
-              </div>
-            </div>
-          </div>
-          <div class="order-form__item  order-form__item--e-mail">
-            <div class="order-form__item-name  order-form__item-name--e-mail">
-              <span>E-mail</span>
-            </div>
-            <div class="order-form__options  order-form__options--e-mail">
-              <div class="order-form__option-wrapper">
-                <input name="e-mail" placeholder="Ваш e-mail" required="" type="email">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="order-form__item-wrapper">
-          <div class="order-form__item  order-form__item--more-info">
-            <div class="order-form__item-name  order-form__item-name--more-info">
-              <span>Доп</span>
-            </div>
-            <div class="order-form__options  order-form__options--more-info">
-              <textarea name="more-info" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </div>
-          </div>
-        </div>
-        <div class="order-form__item-wrapper">
-          <div class="order-form__footer">
-            <button class="order-form__send-btn" type="submit" name="button">Отправить заказ</button>
-            <p class="order-form__required-text">Все поля являются обязательными</p>
-          </div>
+        <div class="order-form__options  order-form__options--color">
+          <input type="checkbox" name="white" value="white" checked="">
+          <label for="white">Белый</label>
+          <input type="checkbox" name="grey" value="grey" checked="">
+          <label for="grey">Серый</label>
+          <input type="checkbox" name="tiffany" value="tiffany">
+          <label for="tiffany">«Тиффани»</label>
+          <input type="checkbox" name="black" value="black">
+          <label for="black">Черный</label>
+          <input type="checkbox" name="pink" value="pink">
+          <label for="pink">Розовый</label>
+          <input type="checkbox" name="orange" value="orange">
+          <label for="orange">Оранжевый</label>
         </div>
       </form>
+      <div class="order-form__item-name  order-form__item-name--full-name">
+        <span>Фио</span>
+      </div>
+      <div class="order-form__full-name-option-wrapper">
+        <label class="order-form__surname-label" for="surname">Фамилия:</label>
+        <input type="text" name="surname" placeholder="Укажите фамилию" required="">
+      </div>
+      <div class="order-form__full-name-option-wrapper">
+        <label class="order-form__name-label" for="name">Имя:</label>
+        <input type="text" name="name" placeholder="Введите ваше имя" required="">
+      </div>
+      <div class="order-form__full-name-option-wrapper">
+        <label class="order-form__fathers-name-label" for="fathers-name">Отчество:</label>
+        <input type="text" name="fathers-name" placeholder="Отчество, если желаете">
+      </div>
+      <div class="order-form__item-name  order-form__item-name--phone-num">
+        <span>Тел</span>
+      </div>
+      <div class="order-form__option-wrapper">
+        <input type="tel" name="phone-number" placeholder="+7 XXX XX XX" required="" value="phone-number">
+      </div>
+      <div class="order-form__item-name  order-form__item-name--e-mail">
+        <span>E-mail</span>
+      </div>
+      <div class="order-form__option-wrapper">
+        <input type="email" name="e-mail" placeholder="Ваш e-mail" required="" value="e-mail">
+      </div>
+      <div class="order-form__item  order-form__item--more-info">
+        <div class="order-form__item-name  order-form__item-name--more-info">
+          <span>Доп</span>
+        </div>
+        <div class="order-form__options  order-form__options--more-info">
+          <textarea name="more-info" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
+      </div>
+      <!--Поля формы-->
+      <!--Кнопка отправить-->
+      <div class="order-form__button">
+        <button class="order-form__send-btn" type="submit" name="button">Отправить заказ</button>
+      </div>
+      <!--Кнопка отправить-->
     </div>
     <!--Блок формы-->
     <!--Подвал-->
     <footer class="page-footer">
       <div class="page-footer__wrapper"><!--центровщик-->
+        <div class="page-footer__social-links">
+          <a class="page-footer__social-link  page-footer__social-link--insta" href="#"></a>
+          <a class="page-footer__social-link  page-footer__social-link--fb" href="#"></a>
+          <a class="page-footer__social-link  page-footer__social-link--vk" href="#"></a>
+        </div>
         <div class="page-footer__developer">
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
             <span>Разарботано</span>
