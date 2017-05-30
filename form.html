@@ -41,26 +41,26 @@
           <span>Тип</span>
         </div>
         <div class="order-form__options  order-form__options--type">
-          <input type="radio" name="type" value="Home accessories" checked="">
+          <input id="type-home" type="radio" name="type" value="Home accessories" checked="">
           <label for="type-home">Аксессуар для интерьера</label>
-          <input type="radio" name="type" value="Toys">
+          <input id="type-toy" type="radio" name="type" value="Toys">
           <label for="type-toy">Детская игрушка</label>
         </div>
         <div class="order-form__item-name  order-form__item-name--color">
           <span>Цвет</span>
         </div>
         <div class="order-form__options  order-form__options--color">
-          <input type="checkbox" name="white" value="white" checked="">
+          <input id="white" name="white" value="white" checked="" type="checkbox">
           <label for="white">Белый</label>
-          <input type="checkbox" name="grey" value="grey" checked="">
+          <input id="grey" name="grey" value="grey" checked="" type="checkbox">
           <label for="grey">Серый</label>
-          <input type="checkbox" name="tiffany" value="tiffany">
+          <input id="tiffany" name="tiffany" value="tiffany" type="checkbox">
           <label for="tiffany">«Тиффани»</label>
-          <input type="checkbox" name="black" value="black">
+          <input id="black" name="black" value="black" type="checkbox">
           <label for="black">Черный</label>
-          <input type="checkbox" name="pink" value="pink">
+          <input id="pink" name="pink" value="pink" type="checkbox">
           <label for="pink">Розовый</label>
-          <input type="checkbox" name="orange" value="orange">
+          <input id="orange" name="orange" value="orange" type="checkbox">
           <label for="orange">Оранжевый</label>
         </div>
       </form>
@@ -68,16 +68,16 @@
         <span>Фио</span>
       </div>
       <div class="order-form__full-name-option-wrapper">
+        <input id="surname" type="text" name="surname" placeholder="Укажите фамилию" required="">
         <label class="order-form__surname-label" for="surname">Фамилия:</label>
-        <input type="text" name="surname" placeholder="Укажите фамилию" required="">
       </div>
       <div class="order-form__full-name-option-wrapper">
+        <input id="name" type="text" name="name" placeholder="Введите ваше имя" required="">
         <label class="order-form__name-label" for="name">Имя:</label>
-        <input type="text" name="name" placeholder="Введите ваше имя" required="">
       </div>
       <div class="order-form__full-name-option-wrapper">
+        <input id="fathers-name" type="text" name="fathers-name" placeholder="Отчество, если желаете">
         <label class="order-form__fathers-name-label" for="fathers-name">Отчество:</label>
-        <input type="text" name="fathers-name" placeholder="Отчество, если желаете">
       </div>
       <div class="order-form__item-name  order-form__item-name--phone-num">
         <span>Тел</span>
