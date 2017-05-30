@@ -14,10 +14,12 @@
         </div>
         <nav class="main-nav main-nav--closed">
           <button class="main-nav__btn" type="button" name="button">Открыть меню</button>
-          <a class="main-nav__item main-nav__item--catalog" href="catalog.html">Каталог товаров</a>
-          <a class="main-nav__item main-nav__item--order" href="form.html">Вязание на заказ</a>
-          <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a>
-          <a class="main-nav__item main-nav__item--cart" href="#">Корзина: пока пуста</a>
+          <div class="main-nav__list">
+            <a class="main-nav__item main-nav__item--catalog" href="catalog.html">Каталог товаров</a>
+            <a class="main-nav__item main-nav__item--order" href="form.html">Вязание на заказ</a>
+            <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a>
+            <a class="main-nav__item main-nav__item--cart" href="#">Корзина: пока пуста</a>
+          </div>
         </nav>
       </div>
     </header>
@@ -25,15 +27,16 @@
     <!--промо блок-->
     <section class="promo-header">
       <div class="promo-header__wrapper"><!--центровщик-->
-        <h1 class="promo-header__descr">Милые штуки ручной
+        <h1 class="promo-header__description">Милые штуки ручной
         работы для дома</h1>
       </div>
     </section>
     <!--промо блок-->
     <!--предметы интерьера детские игрушки-->
     <section class="interior-items">
+      <h2 class="interior-items__title">Список предметов</h2><!--Скрыт-->
       <ul class="interior-items__type-list">
-        <li class"interior-items__type--interior-goods">
+        <li class="interior-items__type--interior-goods">
           <a href="#">
             <span>Предметы интерьера</span>
           </a>
@@ -102,9 +105,9 @@
         </div>
         <div class="reviews__nav-btns">
           <a class="reviews__nav-btn  reviews__nav-btn--prev" href="#">
-            Предидущий отзыв
+            Предыдущий отзыв
           </a>
-          <a class="reviews__nav-btn  reviews__nav-btn--next" href="#">Вперед
+          <a class="reviews__nav-btn  reviews__nav-btn--next" href="#">
             Следующий отзыв
           </a>
         </div>
@@ -132,7 +135,7 @@
       <div class="contacts__map">
         <img src="http://placehold.it/150x100" alt="Карта местонахождения Мишки">
       </div>
-      <a class="contacts__write-us-btn btn" href="#">Напишите нам</a>
+      <a class="contacts__write-us-btn" href="#">Напишите нам</a>
     </section>
     <!--Блок контактов-->
     <!--Подвал-->
@@ -144,8 +147,8 @@
           <a class="page-footer__social-link  page-footer__social-link--vk" href="#"></a>
         </div>
         <div class="page-footer__developer">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
-            <span>Разарботано</span>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span>Разарботано</span>
           </a>
         </div>
       </div>
