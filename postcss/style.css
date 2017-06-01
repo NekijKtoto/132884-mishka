@@ -1,7 +1,7 @@
-body { background: paleturquoise; }
 @import "color.css";
 @import "mixin.css";
 @import "variables.css";
+@import "normalize.css";
 @import "blocks/advantages.css";
 @import "blocks/contacts.css";
 @import "blocks/description-form.css";
@@ -17,6 +17,6 @@ body { background: paleturquoise; }
 @import "blocks/reviews.css";
 @import "blocks/wrapper-form.css";
 @import "blocks/wrapper-product.css";
-@import "blocks/wrapper-produsction.css";
+@import "blocks/wrapper-production.css";
 @import "global/fonts.css";
 @import "global/forms.css";

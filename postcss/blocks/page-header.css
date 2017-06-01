@@ -1,1 +1,4 @@
- 
+.page-header {
+  @mixin border;
+  background-color: $page-header--color;
+}

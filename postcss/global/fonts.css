@@ -6,3 +6,9 @@
        url('fonts/opensans.woff') format('woff'),
        url('fonts/opensansbold.woff') format('woff');
 }
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: normal;
+  background-color: $body-color;
+}
