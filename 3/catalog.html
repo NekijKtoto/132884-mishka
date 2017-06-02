@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/132884-mishka/3/">
+</head>
+  <body>
+    <!--шапка сайта-->
+    <header class="page-header">
+      <div class="page-header__wrapper"><!--центровщик-->
+        <div class="page-header__header-logo">
+          <a href="index.html">
+            <img src="img/logo-mobile.svg" alt="Мишка - магазин изделий ручной работы">
+          </a>
+        </div>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__btn" type="button" name="button">Открыть меню</button>
+          <div class="main-nav__list">
+            <a class="main-nav__item main-nav__item--catalog" href="catalog.html">Каталог товаров</a>
+            <a class="main-nav__item main-nav__item--order" href="form.html">Вязание на заказ</a>
+            <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a>
+            <a class="main-nav__item main-nav__item--cart" href="#">Корзина: пока пуста</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--шапка сайта-->
+    <!--Каталог товаров-->
+    <div class="page-title  page-title--catalog">
+      <h1>Каталог товаров</h1>
+    </div>
+    <!--Каталог товаров-->
+    <!--Блок продукта-->
+    <div class="wrapper-product">
+      <article class="product">
+        <a class="product__photo-link" href="#">
+          <img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" widht="260" height="195">
+        </a>
+        <div class="product__wrapper">
+          <div class="product__description">
+            <h2 class="product__title">
+              <a href="#">Зайчик попрыгайчик</a>
+            </h2>
+            <span class="product__options">Рост 30 см, вес 200 г</span>
+          </div>
+          <div class="product__user-block">
+            <span class="product__price">1 200 руб.</span>
+            <a class="product__order" href="#">Добавить в корзину</a>
+          </div>
+        </div>
+      </article>
+      <article class="product">
+        <a class="product__photo-link" href="#">
+          <img src="img/photo-2-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
+        </a>
+        <div class="product__wrapper">
+          <div class="product__description">
+            <h2 class="product__title">
+              <a href="#">Корзинка для белья</a>
+            </h2>
+            <span class="product__options">Диаметр 15 см, высота 10 см</span>
+          </div>
+          <div class="product__user-block">
+            <span class="product__price">690 руб.</span>
+            <a class="product__order" href="#">Добавить в корзину</a>
+          </div>
+        </div>
+      </article>
+      <article class="product">
+        <a class="product__photo-link" href="#">
+          <img src="img/photo-3-mobile@1x.jpg" alt="Корзинка для игрушек" width="260" height="195">
+        </a>
+        <div class="product__wrapper">
+          <div class="product__description">
+            <h2 class="product__title">
+              <a href="#">Большая корзинка для игрушек</a>
+            </h2>
+            <span class="product__options">Диаметр 30 см, высота 30 см</span>
+          </div>
+          <div class="product__user-block">
+            <span class="product__price">1 500 руб.</span>
+            <a class="product__order" href="#">Добавить в корзину</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!--Блок продукта-->
+    <!--Блок заказа-->
+    <div class="wrapper-production">
+      <article class="production">
+        <div class="production__title">
+          <h2>Процесс производства</h2>
+        </div>
+        <div class="production__video">
+          <a class="production__play-btn" href="#">Play</a>
+            <img src="img/video-mobile@1x.jpg" alt="Видео процесса производства" width="260" height="150">
+        </div>
+        <div class="production__description">
+          <p>
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+          <a class="production__order-btn" href="#">Сделать заказ</a>
+        </div>
+      </article>
+    </div>
+    <!--Блок заказа-->
+    <!--Подвал-->
+    <footer class="page-footer">
+      <div class="page-footer__wrapper"><!--центровщик-->
+        <div class="page-footer__social-links">
+          <a class="page-footer__social-link  page-footer__social-link--insta" href="#"></a>
+          <a class="page-footer__social-link  page-footer__social-link--fb" href="#"></a>
+          <a class="page-footer__social-link  page-footer__social-link--vk" href="#"></a>
+        </div>
+        <div class="page-footer__developer">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span>Разарботано</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!--Подвал-->
+  </body>
+</html>

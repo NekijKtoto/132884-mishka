@@ -1,0 +1,99 @@
+.advantages {
+    border: 2px solid #9400d3;
+    margin: 5px;
+    padding: 5px
+}
+.contacts {
+    border: 2px solid #9400d3;
+    margin: 5px;
+    padding: 5px
+}
+.description-form {
+    border: 2px solid #9400d3;
+    margin: 5px;
+    padding: 5px
+}
+.interior-items {
+    border: 2px solid #9400d3;
+    margin: 5px;
+    padding: 5px
+}
+.interior-items__title {
+    display: none
+}
+.main-nav {
+    border: 2px solid #9400d3;
+    margin: 5px;
+    padding: 5px
+}
+.order-form {
+    border: 2px solid #9400d3;
+    margin: 5px;
+    padding: 5px
+}
+.page-footer {
+    border: 2px solid #9400d3;
+    margin: 5px;
+    padding: 5px
+}
+.page-header {
+    border: 2px solid #9400d3;
+    margin: 5px;
+    padding: 5px;
+    background-color: #ffffff
+}
+.page-title {
+    border: 2px solid #9400d3;
+    margin: 5px;
+    padding: 5px
+}
+.product {
+    border: 2px solid #9400d3;
+    margin: 5px;
+    padding: 5px
+}
+.production {
+    border: 2px solid #9400d3;
+    margin: 5px;
+    padding: 5px
+}
+.promo-header {
+    border: 2px solid #9400d3;
+    margin: 5px;
+    padding: 5px;
+    background: #f9f9f9 url(../img/hero-mobile@1x.jpg) no-repeat 50%;
+    background-size: 575px 373px
+}
+.promo-header__description {}
+.reviews {
+    border: 2px solid #9400d3;
+    margin: 5px;
+    padding: 5px
+}
+.wrapper-form {
+    border: 2px solid #9400d3;
+    margin: 5px;
+    padding: 5px
+}
+.wrapper-product {
+    border: 2px solid #9400d3;
+    margin: 5px;
+    padding: 5px
+}
+.wrapper-production {
+    border: 2px solid #9400d3;
+    margin: 5px;
+    padding: 5px
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/opensans.woff2') format('woff2'),
+       url('fonts/opensansbold.woff2') format('woff2'),
+       url('fonts/opensans.woff') format('woff'),
+       url('fonts/opensansbold.woff') format('woff')
+}
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: normal;
+    background-color: #ffffff
+}
