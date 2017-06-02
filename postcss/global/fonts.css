@@ -1,14 +1,7 @@
-
 @font-face {
   font-family: 'Open Sans';
   src: url('fonts/opensans.woff2') format('woff2'),
-       url('fonts/opensansbold.woff2') format('woff2'),
-       url('fonts/opensans.woff') format('woff'),
-       url('fonts/opensansbold.woff') format('woff');
-}
-
-body {
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-weight: normal;
-  background-color: $body-color;
+      url('fonts/opensansbold.woff2') format('woff2'),
+      url('fonts/opensans.woff') format('woff'),
+      url('fonts/opensansbold.woff') format('woff');
 }

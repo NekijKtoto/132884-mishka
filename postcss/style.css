@@ -1,6 +1,7 @@
 @import "color.css";
 @import "mixin.css";
 @import "variables.css";
+@import "main.css";
 @import "blocks/advantages.css";
 @import "blocks/contacts.css";
 @import "blocks/description-form.css";
@@ -18,4 +19,3 @@
 @import "blocks/wrapper-product.css";
 @import "blocks/wrapper-production.css";
 @import "global/fonts.css";
-@import "global/forms.css";

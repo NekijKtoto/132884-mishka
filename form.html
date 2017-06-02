@@ -28,8 +28,8 @@
     </header>
     <!--шапка сайта-->
     <!--Каталог товаров-->
-    <div class="page-title  page-title--catalog">
-      <h1>Вязание на заказ</h1>
+    <div class="page-title">
+      <h1 class="page-title__catalog">Вязание на заказ</h1>
     </div>
     <!--Каталог товаров-->
     <!--Описание к форме-->
@@ -71,12 +71,12 @@
           <span>Фио</span>
         </div>
         <div class="order-form__full-name-option-wrapper">
-          <input id="surname" type="text" name="surname" placeholder="Укажите фамилию" required="">
-          <label class="order-form__surname-label" for="surname">Фамилия:</label>
+          <input id="name" type="text" name="name" placeholder="Введите ваше имя*" required="">
+          <label class="order-form__name-label" for="name">Имя:</label>
         </div>
         <div class="order-form__full-name-option-wrapper">
-          <input id="name" type="text" name="name" placeholder="Введите ваше имя" required="">
-          <label class="order-form__name-label" for="name">Имя:</label>
+          <input id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required="">
+          <label class="order-form__surname-label" for="surname">Фамилия:</label>
         </div>
         <div class="order-form__full-name-option-wrapper">
           <input id="fathers-name" type="text" name="fathers-name" placeholder="Отчество, если желаете">
@@ -101,6 +101,9 @@
           <div class="order-form__options  order-form__options--more-info">
             <textarea name="more-info" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
+        </div>
+        <div class="warning">
+          <p class="warning__text">*Поля обязательны для заполнения</p>
         </div>
         <!--Кнопка отправить-->
         <div class="order-form__button">
