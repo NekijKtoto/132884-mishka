@@ -1,0 +1,7 @@
+.interior-items {
+  @mixin border;
+}
+
+.interior-items__title {
+  display: none;
+}

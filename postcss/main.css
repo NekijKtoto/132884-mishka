@@ -1,0 +1,215 @@
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: normal;
+  background-color: $white-color;
+}
+/*Главная*/
+.promo-header__description {
+  @mixin header--description;
+  color: $pomo-header__description-color;
+}
+
+.interior-items__type-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.interior-items__type--interior-goods {
+  background-color: $background-color--interior-goods;
+  a {
+    @mixin interior-items-text;
+    color: $white-color;
+    text-decoration: none;
+  }
+}
+
+.interior-items__type--kids-toys {
+  background-color: $background-color--kids-toys;
+  a {
+    @mixin interior-items-text;
+    color: $white-color;
+    text-decoration: none;
+  }
+}
+
+.product__title {
+  @mixin title;
+}
+
+.product__week {
+  @mixin subtitle;
+  line-height: 20px;
+}
+
+.product__description {
+  @mixin main-text;
+  line-height: 24px;
+}
+
+.product__specification-list {
+  @mixin main-text;
+  line-height: 20px;
+}
+
+.product__price {
+  @mixin price-text;
+  font-size: 17px;
+}
+
+.product__order-btn {
+  @mixin write-us-btn;
+}
+
+.advantages__title {
+  @mixin title;
+}
+
+.advantages__list {
+  @mixin advantages-list;
+  list-style: none;
+  /*padding-left: 0;*/
+}
+
+.reviews__title {
+  @mixin title;
+}
+
+.reviews__text {
+  @mixin main-text;
+  line-height: 30px;
+}
+
+.reviews__author-name {
+  @mixin author-name;
+  font-size: 17px;
+}
+
+.reviews__insta-name {
+  @mixin insta-name;
+  font-size: 17px;
+}
+
+.reviews__write-btn {
+  @mixin write-us-btn;
+}
+
+.contacts__title {
+  @mixin contacts-title;
+}
+
+.contacts__main-info {
+  @mixin insta-name;
+  font-size: 15px;
+}
+
+.contacts-e-mail__contacts-item--link {
+  color: $main-text-color;
+  text-decoration: none;
+}
+
+.contacts__write-us-btn {
+  @mixin write-us-btn;
+}
+
+.page-footer__copyright-link {
+  @mixin copyright-link;
+  text-decoration: none;
+}
+/*Главная*/
+/*Каталог*/
+.page-title__catalog {
+  @mixin header--description;
+  color: $color-black;
+}
+
+.product__title {
+  a {
+    @mixin product-title;
+    text-decoration: none;
+  }
+}
+
+.product__options {
+  @mixin product-subtitle;
+}
+
+.product__user-price {
+  @mixin price-text;
+  font-size: 15px;
+}
+
+.production__title {
+  @mixin product-title;
+}
+
+.production__description {
+  @mixin production-description;
+}
+
+.production__order-btn {
+  @mixin write-us-btn;
+}
+/*Каталог*/
+/*Форма*/
+.description-form {
+  @mixin description-form;
+}
+
+input {
+  @mixin input-text;
+}
+
+.order-form__item-name--type {
+  @mixin subtitle;
+  line-height: 16px;
+}
+
+.order-form__item-name--color {
+  @mixin subtitle;
+  line-height: 16px;
+}
+
+.order-form__item-name--full-name {
+  @mixin subtitle;
+  line-height: 16px;
+}
+
+.order-form__item-name--phone-num {
+  @mixin subtitle;
+  line-height: 16px;
+}
+
+.order-form__item-name--e-mail {
+  @mixin subtitle;
+  line-height: 16px;
+}
+
+.order-form__item-name--more-info {
+  @mixin subtitle;
+  line-height: 16px;
+}
+
+.order-form__options {
+  @mixin order-form-text;
+}
+
+.order-form__name-label {
+  @mixin order-form-text;
+}
+
+.order-form__surname-label {
+  @mixin order-form-text;
+}
+
+.order-form__fathers-name-label {
+  @mixin order-form-text;
+}
+
+.warning__text {
+  @mixin warning-text;
+}
+
+.order-form__send-btn {
+  @mixin write-us-btn;
+}
+/*Форма*/

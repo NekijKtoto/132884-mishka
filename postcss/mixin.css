@@ -1,0 +1,135 @@
+@define-mixin border {
+  border: 2px solid #9400d3;
+  margin: 5px;
+  padding: 5px;
+}
+
+@define-mixin header--description {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+@define-mixin interior-items-text {
+  color: $white-color;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@define-mixin title {
+  color: $color-black;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+@define-mixin subtitle {
+  color: $background-color--interior-goods;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@define-mixin main-text {
+  color: $main-text-color;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@define-mixin price-text {
+  color: $main-text-color;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@define-mixin advantages-list {
+  color: $color-black;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+@define-mixin author-name {
+  color: $color-black;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@define-mixin insta-name {
+  color: $main-text-color;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@define-mixin contacts-title {
+  color: $color-black;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+@define-mixin copyright-link {
+  color: $color-black;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+@define-mixin write-us-btn {
+  color: $main-text-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@define-mixin product-title {
+  color: $color-black;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@define-mixin product-subtitle {
+  color: $main-text-color;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@define-mixin production-description {
+  color: $main-text-color;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@define-mixin description-form {
+  color: $main-text-color;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@define-mixin order-form-text {
+  color: $color-black;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+@define-mixin warning-text {
+  color: $main-text-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@define-mixin input-text {
+  color: $main-text-color;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+}
