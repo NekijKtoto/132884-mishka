@@ -1,5 +1,19 @@
 .interior-items {
   @mixin border;
+  margin-top: -66px;
+
+  .interior-items__type-list {
+    margin: 0;
+  }
+
+  .interior-items__type--interior-goods {
+    height: $interior-items-height;
+  }
+
+  .interior-items__type--kids-toys {
+    height: $interior-items-height;
+  }
+
 }
 
 .interior-items__title {

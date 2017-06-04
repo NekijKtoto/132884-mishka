@@ -1,3 +1,7 @@
 .reviews {
   @mixin border;
 }
+
+.reviews__wrapper {
+  @mixin content-center;
+}

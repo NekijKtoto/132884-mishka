@@ -1,3 +1,9 @@
 .page-header {
   @mixin border;
+  display: flex;
+  min-height: $page-header-height;
+}
+
+.page-header__wrapper {
+  @mixin content-center;
 }

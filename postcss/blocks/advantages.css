@@ -1,3 +1,7 @@
 .advantages {
   @mixin border;
 }
+
+.advantages__wrapper {
+  @mixin content-center;
+}

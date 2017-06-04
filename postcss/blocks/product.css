@@ -1,3 +1,7 @@
 .product {
   @mixin border;
 }
+
+.product__wrapper {
+  @mixin content-center;
+}

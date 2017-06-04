@@ -1,8 +1,15 @@
 body {
+  @mixin container;
   font-family: 'Open Sans', Arial, sans-serif;
   font-weight: normal;
   background-color: $white-color;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*Главная*/
 .promo-header__description {
   @mixin header--description;
@@ -18,7 +25,6 @@ body {
   background-color: $background-color--interior-goods;
   a {
     @mixin interior-items-text;
-    color: $white-color;
     text-decoration: none;
   }
 }
@@ -27,7 +33,6 @@ body {
   background-color: $background-color--kids-toys;
   a {
     @mixin interior-items-text;
-    color: $white-color;
     text-decoration: none;
   }
 }

@@ -1,3 +1,7 @@
 .contacts {
   @mixin border;
 }
+
+.contacts__content-wrapper {
+  @mixin content-center;
+}

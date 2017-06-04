@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Мишка: Главная страница</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -51,40 +52,42 @@
       <div class="product__wrapper"><!--центровщик-->
         <h1 class="product__title">Вязаные корзинки</h1>
         <span class="product__week">Товар недели</span>
+        <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="product__specification-list">
+          <tbody>
+            <tr class="product__cpecification">
+              <td class="product__options">Цвет</td>
+              <td class="product__value">"Тиффани"/серый</td>
+            </tr>
+            <tr class="product__cpecification">
+              <td class="product__options">Диаметр:</td>
+              <td class="product__value">25 см</td>
+            </tr>
+            <tr class="product__cpecification">
+              <td class="product__options">Высота:</td>
+              <td class="product__value">15 см</td>
+            </tr>
+          </tbody>
+        </table>
+        <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" heigth="315">
+        <span class="product__price">Цена: 990 руб.</span>
+        <a class="product__order-btn" href="#">Заказать</a>
       </div>
-      <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-      <table class="product__specification-list">
-        <tbody>
-          <tr class="product__cpecification">
-            <td class="product__options">Цвет</td>
-            <td class="product__value">"Тиффани"/серый</td>
-          </tr>
-          <tr class="product__cpecification">
-            <td class="product__options">Диаметр:</td>
-            <td class="product__value">25 см</td>
-          </tr>
-          <tr class="product__cpecification">
-            <td class="product__options">Высота:</td>
-            <td class="product__value">15 см</td>
-          </tr>
-        </tbody>
-      </table>
-      <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" heigth="315">
-      <span class="product__price">Цена: 990 руб.</span>
-      <a class="product__order-btn" href="#">Заказать</a>
     </article>
     <!--Блок продукта-->
     <!--Блок преимуществ-->
     <section class="advantages">
-      <h2 class="advantages__title">Коротко о нас:</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item  advantages__item--ecology">Экологически чистые материалы</li>
-        <li class="advantages__item advantages__item--scandinavian">Скандинавский стиль по российской цене</li>
-        <li class="advantages__item  advantages__item--likes">Увеличивает лайки на фотографиях</li>
-        <li class="advantages__item  advantages__item--handmade">Связано вручную с любовью и умилением</li>
-        <li class="advantages__item  advantages__item--domestic">Поддержка отечественного производителя</li>
-        <li class="advantages__item  advantages__item--pack">Поставляется в подарочной упаковке</li>
-      </ul>
+      <div class="advantages__wrapper">
+        <h2 class="advantages__title">Коротко о нас:</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item  advantages__item--ecology">Экологически чистые материалы</li>
+          <li class="advantages__item advantages__item--scandinavian">Скандинавский стиль по российской цене</li>
+          <li class="advantages__item  advantages__item--likes">Увеличивает лайки на фотографиях</li>
+          <li class="advantages__item  advantages__item--handmade">Связано вручную с любовью и умилением</li>
+          <li class="advantages__item  advantages__item--domestic">Поддержка отечественного производителя</li>
+          <li class="advantages__item  advantages__item--pack">Поставляется в подарочной упаковке</li>
+        </ul>
+      </div>
     </section>
     <!--Блок преимуществ-->
     <!--Блок отзывов-->
