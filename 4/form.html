@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Вязание на заказ</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/132884-mishka/4/">
+</head>
+  <body>
+    <!--шапка сайта-->
+    <header class="page-header">
+      <div class="page-header__wrapper"><!--центровщик-->
+        <div class="page-header__header-logo">
+          <a href="index.html">
+            <img src="img/logo-mobile.svg" alt="Мишка - магазин изделий ручной работы">
+          </a>
+        </div>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__btn" type="button" name="button">Открыть меню</button>
+          <div class="main-nav__list">
+            <a class="main-nav__item main-nav__item--catalog" href="catalog.html">Каталог товаров</a>
+            <a class="main-nav__item main-nav__item--order" href="form.html">Вязание на заказ</a>
+            <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a>
+            <a class="main-nav__item main-nav__item--cart" href="#">Корзина: пока пуста</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--шапка сайта-->
+    <!--Каталог товаров-->
+    <div class="page-title">
+      <h1 class="page-title__catalog">Вязание на заказ</h1>
+    </div>
+    <!--Каталог товаров-->
+    <!--Описание к форме-->
+    <p class="description-form">
+      Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+    </p>
+    <!--Описание к форме-->
+    <!--Блок формы-->
+    <div class="wrapper-form"><!--Центровщик-->
+      <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
+        <!--Поля формы-->
+        <div class="order-form__item-name  order-form__item-name--type">
+          <span>Тип</span>
+        </div>
+        <div class="order-form__options  order-form__options--type">
+          <input id="type-home" type="radio" name="type" value="Home accessories" checked="">
+          <label for="type-home">Аксессуар для интерьера</label>
+          <input id="type-toy" type="radio" name="type" value="Toys">
+          <label for="type-toy">Детская игрушка</label>
+        </div>
+        <div class="order-form__item-name  order-form__item-name--color">
+          <span>Цвет</span>
+        </div>
+        <div class="order-form__options  order-form__options--color">
+          <input id="white" name="white" value="white" checked="" type="checkbox">
+          <label for="white">Белый</label>
+          <input id="grey" name="grey" value="grey" checked="" type="checkbox">
+          <label for="grey">Серый</label>
+          <input id="tiffany" name="tiffany" value="tiffany" type="checkbox">
+          <label for="tiffany">«Тиффани»</label>
+          <input id="black" name="black" value="black" type="checkbox">
+          <label for="black">Черный</label>
+          <input id="pink" name="pink" value="pink" type="checkbox">
+          <label for="pink">Розовый</label>
+          <input id="orange" name="orange" value="orange" type="checkbox">
+          <label for="orange">Оранжевый</label>
+        </div>
+        <div class="order-form__item-name  order-form__item-name--full-name">
+          <span>Фио</span>
+        </div>
+        <div class="order-form__full-name-option-wrapper">
+          <input id="name" type="text" name="name" placeholder="Введите ваше имя*" required="">
+          <label class="order-form__name-label" for="name">Имя:</label>
+        </div>
+        <div class="order-form__full-name-option-wrapper">
+          <input id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required="">
+          <label class="order-form__surname-label" for="surname">Фамилия:</label>
+        </div>
+        <div class="order-form__full-name-option-wrapper">
+          <input id="fathers-name" type="text" name="fathers-name" placeholder="Отчество, если желаете">
+          <label class="order-form__fathers-name-label" for="fathers-name">Отчество:</label>
+        </div>
+        <div class="order-form__item-name  order-form__item-name--phone-num">
+          <span>Тел</span>
+        </div>
+        <div class="order-form__option-wrapper">
+          <input type="tel" name="phone-number" placeholder="+7 XXX XX XX" required="">
+        </div>
+        <div class="order-form__item-name  order-form__item-name--e-mail">
+          <span>E-mail</span>
+        </div>
+        <div class="order-form__option-wrapper">
+          <input type="email" name="e-mail" placeholder="Ваш e-mail" required="">
+        </div>
+        <div class="order-form__item  order-form__item--more-info">
+          <div class="order-form__item-name  order-form__item-name--more-info">
+            <span>Доп</span>
+          </div>
+          <div class="order-form__options  order-form__options--more-info">
+            <textarea name="more-info" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+        </div>
+        <div class="warning">
+          <p class="warning__text">*Поля обязательны для заполнения</p>
+        </div>
+        <!--Кнопка отправить-->
+        <div class="order-form__button">
+          <button class="order-form__send-btn" type="submit" name="button">Отправить заказ</button>
+        </div>
+        <!--Кнопка отправить-->
+        <!--Поля формы-->
+      </form>
+    </div>
+    <!--Блок формы-->
+    <!--Подвал-->
+    <footer class="page-footer">
+      <div class="page-footer__wrapper"><!--центровщик-->
+        <div class="page-footer__social-links">
+          <a class="page-footer__social-link  page-footer__social-link--insta" href="#"></a>
+          <a class="page-footer__social-link  page-footer__social-link--fb" href="#"></a>
+          <a class="page-footer__social-link  page-footer__social-link--vk" href="#"></a>
+        </div>
+        <div class="page-footer__developer">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span>Разарботано</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!--Подвал-->
+  </body>
+</html>
