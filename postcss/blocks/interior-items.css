@@ -5,17 +5,34 @@
   .interior-items__type-list {
     margin: 0;
   }
+}
 
-  .interior-items__type--interior-goods {
-    height: $interior-items-height;
-  }
+.interior-items__type--interior-goods {
+  height: $interior-items-height;
+  width:100%;
+}
 
-  .interior-items__type--kids-toys {
-    height: $interior-items-height;
-  }
-
+.interior-items__type--kids-toys {
+  height: $interior-items-height;
+  width:100%;
 }
 
 .interior-items__title {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .interior-items__wrapper {
+    @mixin border;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .interior-items__type-list {
+    display: flex;
+  }
+
+  .interior-items {
+    margin-top: -52px;
+  }
 }

@@ -8,3 +8,10 @@
 .promo-header__wrapper {
   @mixin content-center;
 }
+
+@media (min-width: $tablet-width) {
+  .promo-header__wrapper {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}

@@ -6,4 +6,28 @@
 
 .page-header__wrapper {
   @mixin content-center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .main-nav__list {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav--closed {
+    width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .page-header__wrapper {
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }

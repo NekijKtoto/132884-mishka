@@ -1,3 +1,16 @@
 .production {
   @mixin border;
 }
+
+.production__description {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .production__wrapper {
+    @mixin border;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}

@@ -5,3 +5,40 @@
 .product__wrapper {
   @mixin content-center;
 }
+
+.product__photo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.production__video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .product__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .product__title {
+    width: 250px;
+  }
+
+  .product__wrapper-box {
+    @mixin border;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}

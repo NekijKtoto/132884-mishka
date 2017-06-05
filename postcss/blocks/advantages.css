@@ -5,3 +5,10 @@
 .advantages__wrapper {
   @mixin content-center;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__wrapper {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
