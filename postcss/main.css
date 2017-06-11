@@ -5,36 +5,25 @@ body {
   background-color: $white-color;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 
+/*svg-none*/
+.display-none {
+  @mixin display-none;
+}
+/*svg-none*/
+
 /*Главная*/
 .promo-header__description {
   @mixin header--description;
   color: $pomo-header__description-color;
-}
-
-.interior-items__type-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.interior-items__type--interior-goods {
-  background-color: $background-color--interior-goods;
-  a {
-    @mixin interior-items-text;
-    text-decoration: none;
-  }
-}
-
-.interior-items__type--kids-toys {
-  background-color: $background-color--kids-toys;
-  a {
-    @mixin interior-items-text;
-    text-decoration: none;
-  }
 }
 
 .product__title {

@@ -1,5 +1,5 @@
 @define-mixin border {
-  border: 2px solid #9400d3;
+  border: 1px solid #9400d3;
 }
 
 @define-mixin header--description {
@@ -150,6 +150,14 @@
 @define-mixin content-center {
   @mixin border;
   width: auto;
-  margin-left: $padding-content;
-  margin-right: $padding-content;
+  padding-left: $padding-content;
+  padding-right: $padding-content;
+}
+
+@define-mixin display-none {
+  display: none;
+}
+
+@define-mixin display-block {
+  display: block;
 }
