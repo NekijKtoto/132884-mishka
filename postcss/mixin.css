@@ -1,7 +1,5 @@
 @define-mixin border {
-  border: 2px solid #9400d3;
-  margin: 5px;
-  padding: 5px;
+  border: 1px solid #9400d3;
 }
 
 @define-mixin header--description {
@@ -132,4 +130,36 @@
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
+}
+
+/*grid*/
+@define-mixin container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
+/*grid*/
+
+@define-mixin content-center {
+  @mixin border;
+  width: auto;
+  padding-left: $padding-content;
+  padding-right: $padding-content;
+}
+
+@define-mixin display-none {
+  display: none;
+}
+
+@define-mixin display-block {
+  display: block;
 }

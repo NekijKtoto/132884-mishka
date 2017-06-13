@@ -1,3 +1,21 @@
 .page-header {
   @mixin border;
+  display: flex;
+  min-height: $page-header-height;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav--closed {
+    width: auto;
+  }
+
+  .page-header__wrapper {
+    width: 100%;
+  }
 }

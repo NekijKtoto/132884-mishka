@@ -1,3 +1,472 @@
 .order-form {
   @mixin border;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 58px;
+}
+
+.description-form {
+  @mixin border;
+  align-self: center;
+  width: 85%;
+  max-width: 400px;
+  margin: 0;
+  padding: 25px;
+  font-size: 14px;
+  line-height: 25px;
+  color: $main-text-color;
+  box-sizing: content-box;
+}
+
+.order-form__item {
+  margin: 0 auto;
+}
+
+.order-form__item-name {
+  position: relative;
+  padding-left: 29px;
+  padding-right: 30px;
+}
+
+.order-form__item-name span {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $background-color--interior-goods;
+}
+
+.order-form__item-name::after {
+  content: "";
+  position: absolute;
+  top: 11.5px;
+  left: 92px;
+  width: 61.875%;
+  height: 1px;
+  background: $background-color--interior-goods;
+}
+
+.order-form__options--type {
+  padding-top: 27px;
+  padding-bottom: 18px;
+}
+
+.order-form__options {
+  padding-left: 30px;
+}
+
+.order-form__options--color input,
+.order-form__options--type input {
+  display: none;
+}
+
+.order-form__options input {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  background: 0 0;
+  border: none;
+  border-bottom: 2px solid $color-black;
+  outline: none;
+}
+
+.order-form__options--type label {
+  display: block;
+  padding-left: 62px;
+  padding-bottom: 25px;
+}
+
+.order-form__options label {
+  position: relative;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.order-form__options--type label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 39px;
+  height: 41px;
+  border: 2px solid $main-text-color;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.order-form__options--type input:checked+label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  width: 16px;
+  height: 17px;
+  background: $background-color--interior-goods;
+  border-radius: 50%;
+}
+
+.order-form__options--type label:last-child {
+  padding-top: 5px;
+}
+
+.order-form__options--color {
+  padding-top: 32px;
+  padding-bottom: 1px;
+}
+
+.order-form__options--color label {
+  display: block;
+  padding-left: 62px;
+  padding-bottom: 45px;
+}
+
+.order-form__options--color label::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 40px;
+  height: 41px;
+  border: 2px solid $main-text-color;
+  box-sizing: border-box;
+}
+
+.order-form__options--color input:checked+label:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  width: 22px;
+  height: 17px;
+  background: url(../img/icon-tick.svg) no-repeat 50% 50%;
+  background-size: 22px 17px;
+}
+
+.order-form__options--full-name,
+.order-form__options--phone-num {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 8px;
+  padding-right: 30px;
+  padding-bottom: 32px;
+}
+
+.order-form__full-name-option-wrapper {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.order-form__options--full-name label {
+  flex-basis: 100%;
+  padding-top: 22.5px;
+}
+
+.order-form__options--e-mail input,
+.order-form__options--full-name input,
+.order-form__options--more-info textarea,
+.order-form__options--phone-num input {
+  flex-basis: 100%;
+}
+
+.order-form__options input {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  background: 0 0;
+  border: none;
+  border-bottom: 2px solid $color-black;
+  outline: none;
+}
+
+.order-form__options--phone-num {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 38px;
+}
+
+.order-form__option-wrapper {
+  flex-basis: 100%;
+  display: flex;
+  position: relative;
+}
+
+.error svg,
+.order-form__option-wrapper svg {
+  fill: $color-black;
+  opacity: .2;
+}
+
+.order-form__e-mail-icon,
+.order-form__phone-icon {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  display: block;
+  width: 24.8px;
+  height: 24.3px;
+}
+
+.order-form__options--e-mail {
+  display: flex;
+  padding-top: 4px;
+  padding-right: 30px;
+  padding-bottom: 32px;
+}
+
+.order-form__e-mail-icon {
+  right: 4px;
+  width: 32px;
+  height: 32px;
+}
+
+.order-form__options--more-info {
+  display: flex;
+  padding-top: 31px;
+  padding-right: 30px;
+  padding-bottom: 58px;
+}
+
+.order-form__options textarea {
+  padding: 15px;
+  line-height: 19px;
+  border: 2px solid $main-text-color;
+  outline: none;
+}
+
+.order-form__footer {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.order-form__send-btn {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-weight: 700;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $main-text-color;
+  background-color: $white-color;
+  border: 2px solid $main-text-color;
+  outline: none;
+  width: 81.25%;
+  padding-top: 17px;
+  padding-bottom: 18px;
+}
+
+.order-form__required-text {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__item-wrapper {
+    padding-top: 30px;
+  }
+
+  .description-form {
+    width: auto;
+    max-width: none;
+    padding-top: 60px;
+    padding-right: 44px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .order-form__item {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .order-form__item-name {
+    padding-left: 51px;
+  }
+
+  .order-form__options--type {
+    padding-top: 0;
+    padding-bottom: 14px;
+    padding-right: 206px;
+  }
+
+  .order-form__options input {
+    padding-right: 16px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+  }
+
+  .order-form__options--type label {
+    padding-top: 2px;
+    padding-bottom: 56px;
+    padding-left: 80px;
+  }
+
+  .order-form__options--type label::before {
+    top: -13px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .order-form__options--type input:checked+label::after {
+    top: 2px;
+    left: 15px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .order-form__options--type label:last-child {
+    padding-top: 2px;
+  }
+
+  .order-form__item-wrapper--background {
+    background: $background-page-title;
+  }
+
+  .order-form__item--color {
+    padding-top: 74px;
+    padding-bottom: 23px;
+  }
+
+  .order-form__options--color {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+  }
+
+  .order-form__item-name::after {
+    display: none;
+  }
+
+  .order-form__options input,
+  .order-form__options label,
+  .order-form__options textarea {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .order-form__options--color label {
+    width: 150px;
+    padding-top: 2px;
+    padding-left: 80px;
+    padding-bottom: 56px;
+  }
+
+  .order-form__item--full-name,
+  .order-form__item--phone-num {
+    padding-top: 45px;
+  }
+
+  .order-form__options--full-name {
+    display: flex;
+    flex-basis: 60%;
+    flex-grow: 1;
+    align-items: baseline;
+    padding: 0 50px 47px 40px;
+  }
+
+  .order-form__full-name-option-wrapper {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    padding-bottom: 20px;
+  }
+
+  .order-form__options--full-name label {
+    flex-basis: auto;
+    padding-right: 23px;
+    padding-top: 0;
+  }
+
+  .order-form__options--full-name input {
+    flex-grow: 1;
+  }
+
+  .order-form__options--phone-num {
+    padding: 4px 50px 16px 40px;
+    flex-grow: 1;
+  }
+
+  .order-form__options--e-mail {
+    padding-right: 50px;
+    padding-bottom: 67px;
+    padding-left: 15px;
+    flex-grow: 1;
+  }
+
+  .order-form__item--more-info {
+    padding-top: 33px;
+  }
+
+  .order-form__options--more-info {
+    padding-right: 50px;
+    padding-bottom: 53px;
+    padding-left: 40px;
+    flex-grow: 1;
+  }
+
+  .order-form__footer {
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .order-form__send-btn {
+    width: 230px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    padding-left: 3px;
+  }
+
+  .order-form__required-text {
+    display: flex;
+    margin: 0;
+    padding-top: 9px;
+    line-height: 30px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .description-form {
+    align-self: center;
+    padding: 103px 64px 71px 160px;
+  }
+
+  .order-form__item-name {
+    padding-left: 115px;
+  }
+
+  .order-form__options--type {
+    padding-right: 520px;
+  }
+
+  .order-form__options--full-name {
+    width: auto;
+    padding: 2px 225px 48px 45px;
+  }
+
+  .order-form__options--phone-num {
+    padding-right: 225px;
+    padding-left: 48px;
+  }
+
+  .order-form__options--e-mail {
+    padding-right: 225px;
+    padding-left: 25px;
+  }
+
+  .order-form__options--more-info {
+    padding-right: 225px;
+    padding-bottom: 90px;
+    padding-left: 45px;
+  }
+
+  .order-form__footer {
+    padding-left: 225px;
+    padding-right: 224px;
+  }
+
+
 }
