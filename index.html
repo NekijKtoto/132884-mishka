@@ -51,29 +51,43 @@
     <!--svg-->
     <!--шапка сайта-->
     <header class="page-header">
-      <div class="page-header__wrapper"><!--центровщик-->
+      <div class="page-header__wrapper">
         <nav class="main-nav main-nav--closed main-nav--nojs">
-        <div class="page-header__header-logo">
-          <img src="img/logo-mobile.svg" alt="Мишка - магазин изделий ручной работы">
-          <button class="main-nav__btn" type="button" name="button">Открыть меню</button>
-        </div>
-          <div class="main-nav__list">
-            <a class="main-nav__item main-nav__item--catalog" href="catalog.html">Каталог товаров</a>
-            <a class="main-nav__item main-nav__item--order" href="form.html">Вязание на заказ</a>
-            <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту
-              <svg class="main-nav__search-icon" width="17" height="17">
-                <use xmlns:xlink="http://www.w3.org/1999/xlinl" xlink:href="#icon-search"><use/>
-              </svg>
-            </a>
-            <a class="main-nav__item main-nav__item--cart" href="#">Корзина: пока пуста
-              <svg class="main-nav__cart-icon" width="20" height="18">
-                <use xmlns:xlink="http://www.w3.org/1999/xlinl" xlink:href="#icon-cart"><use/>
-              </svg>
-            </a>
-            <a class="main-nav__item main-nav__item--new" href="#">Новые поступления</a>
-            <a class="main-nav__item main-nav__item--sale" href="#">Распродажа</a>
-            <a class="main-nav__item main-nav__item--delivery" href="#">Бесплатная доставка по России</a>
-          </div>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item  main-nav__item--logo">
+              <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка - магазин изделий ручной работы">
+            </li>
+            <li class="main-nav__item  main-nav__item--catalog">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--order">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--search">
+              <a href="#">Поиск по сайту
+                <svg class="main-nav__search-icon" width="17.6" height="17.6">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlinl" xlink:href="#icon-search"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-nav__item  main-nav__item--cart">
+              <a href="#">Корзина: пока пуста
+                <svg class="main-nav__cart-icon" width="20.3" height="18.9">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlinl" xlink:href="#icon-cart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-nav__item  main-nav__item--new">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--sale">
+              <a href="#">Распродажа</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--delivery">
+              <span>Бесплатная доставка по России</span>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
